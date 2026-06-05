@@ -1,4 +1,4 @@
-# Tarea 3.0 — CI/CD con GitHub Actions y Docker
+# Tarea 3.0 — CI/CD con GitHub Actions y Docker IP
 
 Aplicación sencilla en Python con flujo de CI/CD automatizado usando GitHub Actions y Docker.
 
