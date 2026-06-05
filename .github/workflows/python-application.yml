@@ -43,15 +43,15 @@ jobs:
           echo "Verificando entorno de producción..."
           echo "Desplegando ejercicio:3.0.0..."
           echo "Despliegue completado exitosamente."
-
+ 
       # 6. Construir imagen Docker
       - name: Construir imagen de docker
-        run: docker build -t ghcr.io/${{ github.actor }}/ejercicio:3.0.0 .
-
+        run: docker build -t ghcr.io/isaacyav97/ejercicio:3.0.0 .
+ 
       # 7. Autenticarse en GitHub Container Registry
       - name: Login hacia GitHub Container Registry
         run: echo "${{ secrets.TOKEN_WR_IP }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
+ 
       # 8. Publicar la imagen generada
       - name: Publicar la imagen
-        run: docker push ghcr.io/${{ github.actor }}/ejercicio:3.0.0
+        run: docker push ghcr.io/isaacyav97/ejercicio:3.0.0
